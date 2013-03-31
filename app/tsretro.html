@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>TS Retro</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" type="text/css" href="HtmlCss.css" />
+        <link rel="stylesheet" type="text/css" href="tsretro.css" />
+    </head>
+    <body>
+    <div class="container-fluid metro">
+        <div class="row-fluid">
+            <div class="span3">
+                <button id="new-btn" class="btn btn-primary">New note</button>
+                <form id="note" style="display: none" action="javascript:void(0);">
+                    <br>
+                    <input id="title" type="text" placeholder="Title" required>
+                    <textarea id="notes" placeholder="notes" rows="10" required></textarea>
+                    <select id="question">
+                        <option value="1">What did we do well?</option>
+                        <option value="2">What did we learn?</option>
+                        <option value="3">What should we do differently next time?</option>
+                        <option value="4">What still puzzles us?</option>
+                    </select>
+                    <input id="tags" type="text" placeholder="Additional tags">
+                    <br>
+                    <button id="save-btn" class="btn btn-success">Save</button>
+                    <button id="cancel-btn" class="btn btn-danger">Cancel</button>
+                </form>
+            </div>
+            <div class="span9">
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h1>What did we do well?</h1>
+                        <br>
+                        <section id="well" class="notes">
+
+                        </section>
+                    </div>
+                    <div class="span6">
+                        <h1>What did we learn?</h1>
+                        <br>
+                        <section id="learn" class="notes">
+
+                        </section>
+                    </div>
+                </div>
+                <div class="row-fluid">
+                    <div class="span6">
+                        <h1>What should we do differently next time?</h1>
+                        <br>
+                        <section id="different" class="notes">
+
+                        </section>
+                    </div>
+                    <div class="span6">
+                        <h1>What still puzzles us?</h1>
+                        <br>
+                        <section id="puzzles" class="notes">
+
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="http://tiddlyspace.com/bags/common/tiddlers/jquery.js"></script>
+    <script src="tsretro.js"></script>
+    <script src="http://tiddlyspace.com/bags/common/tiddlers/backstage.js"></script>
+    </body>
+</html>

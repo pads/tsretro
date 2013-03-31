@@ -1,0 +1,9 @@
+input, textarea, select {
+    width: 300px;
+}
+
+.top-right {
+    position: relative;
+    top: -15%;
+    left: 100%;
+}

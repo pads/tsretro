@@ -1,0 +1,19 @@
+{
+  "name": "tsretro",
+  "version": "0.1.0",
+  "description": "A TiddlySpace app to conduct project retrospectives",
+  "author": "Ben Paddock",
+  "main": "Gruntfile.js",
+  "devDependencies": {
+    "grunt": "~0.4.0",
+    "grunt-exec": "~0.4.0",
+    "grunt-contrib-copy": "~0.4.0",
+    "grunt-contrib-clean": "~0.4.0",
+    "grunt-contrib-cssmin": "~0.5.0",
+    "grunt-curl": "~0.5.0",
+    "grunt-contrib-jshint": "~0.3.0"
+  },
+  "scripts": {
+    "test": "grunt test"
+  }
+}
