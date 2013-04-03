@@ -50,5 +50,4 @@ Navigate to `http://localhost:8080/tsretro.html`
 
 * Form validation
 * Install twangular from bower
-* Move status sevice to twangular
 * Provide option to make tiddlers public or private
