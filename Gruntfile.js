@@ -27,7 +27,8 @@ module.exports = function(grunt) {
             ]
         },
         copy: {
-            all: { expand: true, flatten: true, src: ["src/font/*.*"], dest: "app/assets/", filter: "isFile" }
+            font: { expand: true, flatten: true, src: ["src/font/*.*"], dest: "app/assets/", filter: "isFile" },
+            lib: { expand: true, flatten: true, src: ["lib/**/*.js"], dest: "app/assets/", filter: "isFile" }
         },
         exec: {
             tsserve: {
@@ -61,36 +62,11 @@ module.exports = function(grunt) {
             }
         },
         jshint: {
-            options: {
-                bitwise: true,
-                camelcase: true,
-                curly: true,
-                eqeqeq: true,
-                forin: true,
-                immed: true,
-                indent: 4,
-                latedef: true,
-                newcap: true,
-                noarg: true,
-                noempty: true,
-                quotmark: "double",
-                trailing: true,
-                maxlen: 120,
-                undef: true,
-                unused: true,
-                boss: true,
-                browser: true,
-                sub: true,
-                globals: {
-                    $: true,
-                    jQuery: true
-                }
-            },
             files: {
                 src: ["Gruntfile.js", "app/assets/*.js"]
             }
         },
-        clean: ["src/css", "src/font", "app/assets/HtmlCss.css"]
+        clean: ["src/css", "src/font", "app/assets/HtmlCss.css", "lib"]
     });
 
     grunt.registerTask("ts-deploy", "Deploy the application to TiddlySpace", function () {

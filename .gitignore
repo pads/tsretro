@@ -6,3 +6,4 @@ app/assets/*.svg
 app/assets/*.ttf
 app/assets/*.woff
 HtmlCss.css
+lib
