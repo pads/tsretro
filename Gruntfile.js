@@ -63,7 +63,7 @@ module.exports = function(grunt) {
         },
         jshint: {
             files: {
-                src: ["Gruntfile.js", "app/assets/*.js"]
+                src: ["Gruntfile.js", "app/assets/MainController.js", "app/assets/tsretro.js"]
             }
         },
         clean: ["src/css", "src/font", "app/assets/HtmlCss.css", "lib"]
