@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A TiddlySpace app to conduct project retrospectives",
   "author": "Ben Paddock",
+  "license": "MIT",
   "main": "Gruntfile.js",
   "devDependencies": {
     "grunt": "~0.4.0",
